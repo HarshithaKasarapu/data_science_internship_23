@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <style>
+        h1{
+            color: crimson;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        input[type="text"]{
+            color: darkgrey;
+            display: block;
+            margin: 0 auto;
+            padding:5px;
+        }
+        button{
+            color: darksalmon;
+            display:block;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Note-Taking-App</h1>
+    <form action="{{url_for('note')}}" method="POST">
+        <input type="text" name="note" placeholder="Enter your note"><br>
+        <button>Add note</button>
+    </form>
+    
+</body>
+</html>
